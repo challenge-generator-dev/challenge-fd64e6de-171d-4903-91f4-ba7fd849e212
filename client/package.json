@@ -1,0 +1,71 @@
+{
+  "name": "product-management-client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "react": "19.0.0-rc.0",
+    "react-dom": "19.0.0-rc.0",
+    "react-router-dom": "6.21.1",
+    "axios": "1.6.2"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
+    "@vitejs/plugin-react": "4.2.1",
+    "vite": "5.0.10",
+    "typescript": "^5.2.2",
+    "@types/node": "^20.10.5",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "@testing-library/react": "14.1.2",
+    "vitest": "1.1.0",
+    "jsdom": "^23.0.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "plugins": [
+      "react",
+      "@typescript-eslint",
+      "react-hooks",
+      "react-refresh"
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "react-refresh/only-export-components": [
+        "warn",
+        { "allowConstantExport": true }
+      ]
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  }
+}
